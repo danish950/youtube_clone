@@ -11,7 +11,7 @@ class ApiError{
         this.message = false
         this.errors = errors
 
-        if(stach){
+        if(stack){
             this.stack = stack
         } else {
             error.captureStackTrace(this, this.constructor)
